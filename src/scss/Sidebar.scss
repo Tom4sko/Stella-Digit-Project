@@ -1,0 +1,83 @@
+$textColor: #0a380b;
+$backgroundColor: #f3f2f2;
+$borderColor: #4A5E26;
+
+.sidebar {
+    position: fixed;
+    background-color: $backgroundColor;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border-left: 1px solid black;
+
+    h2 {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $textColor;
+        padding: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .button {
+        background-color: $borderColor;
+        padding: 10px 20px;
+        border-radius: 20px;
+        align-self: center;
+        color: $backgroundColor;
+        border: none;
+        cursor: pointer;
+        justify-content: center;
+        margin: 0 50px;
+
+        &:hover {
+            background-color: $textColor;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+     
+    li {
+        margin: 25px 0;
+
+        a {
+            text-decoration: none;
+            color: $textColor;
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            padding: 0 50px;
+
+            &:hover {
+                color: #000000;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .social-link {
+        a {
+            font-size: 20px;
+            color: $textColor;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            margin-left: 35px;
+
+            &:hover {
+                color: $borderColor;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        display: none;
+    }
+}
